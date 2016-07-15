@@ -1,0 +1,4 @@
+! includes
+#include ".Xresources.d/xft"
+#include ".Xresources.d/rofi"
+#include ".Xresources.d/urxvt"

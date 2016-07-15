@@ -1,0 +1,34 @@
+! URxvt specific
+URxvt*termName: xterm-256color
+URxvt.font: xft:source code pro:size=10
+URxvt.scrollBar: false
+URxvt.letterSpace: -1
+URxvt.lineSpace: 1
+URxvt.loginShell: true
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox-beta
+URxvt.matcher.button: 1
+URxvt.internalBorder: 12
+
+! Colors
+URxvt.depth: 32
+URxvt.background:   [95]#282828
+URxvt.foreground:   #cccccc
+URxvt.cursorColor:  #aeafad
+URxvt.color0:       #454945
+URxvt.color1:       #bf5b75
+URxvt.color2:       #9dc26d
+URxvt.color3:       #e1c236
+URxvt.color4:       #7ca8dc
+URxvt.color5:       #ad94cf
+URxvt.color6:       #70a8bb
+URxvt.color7:       #fbfbf8
+
+URxvt.color8:       #787a78
+URxvt.color9:       #ff99aa
+URxvt.color10:      #aaffdd
+URxvt.color11:      #ffddaa
+URxvt.color12:      #aaaaff
+URxvt.color13:      #ffbbff
+URxvt.color14:      #aaffff
+URxvt.color15:      #ffffff
