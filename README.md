@@ -1,10 +1,16 @@
 # dotfiles and utility scripts for lorwyn.jpn
 
-color scheme based on japanesque
+### screenshots
+
+no window on main monitor, rofi open, showing desktop, atom editor, terminals, dunst, htop
+
+![no window on main monitor, rofi open, showing desktop](http://i.imgur.com/NeZd7aR.png)
+
+### colors based on japanesque
 
 ![japanesque color scheme ](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/screenshots/japanesque.png)
 
 ### TODO
 
-- add screenshots for theme
+- add screenshots of i3/lemonbar/etc in use to show theme
 - list programs required for everything to work properly
