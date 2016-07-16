@@ -8,6 +8,7 @@
 #   xdotool
 #   amixer
 #   mpc
+#   dropbox-cli
 #
 
 
@@ -15,6 +16,10 @@
 #
 
 # TODO:
+#   add buttons to i3 workspaces list
+#       click navigates to clicked workspace
+#       scroll up: prev, scroll down: next
+#   add power buttons, or remove and add rofi shortcut
 #   maybe add named parameters for "".format() to reduce some clutter/additional typing
 #   add statuses for:
 #     mail
@@ -22,10 +27,11 @@
 #     battery
 #     brightness
 #   convert all the shell->mpc results to using the mpd library
+#   docs for usage(buttons are clickable/scrollable)
 #
 
 # INFO:
-#
+#   cloud status relies on dropbox-cli
 
 # imports
 import i3ipc

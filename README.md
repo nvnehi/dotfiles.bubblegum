@@ -12,5 +12,4 @@ no window on main monitor, rofi open, showing desktop, atom editor, terminals, d
 
 ### TODO
 
-- add screenshots of i3/lemonbar/etc in use to show theme
 - list programs required for everything to work properly
