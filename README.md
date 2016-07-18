@@ -10,6 +10,21 @@ no window on main monitor, rofi open, showing desktop, atom editor, terminals, d
 
 ![japanesque color scheme ](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/screenshots/japanesque.png)
 
-### TODO
+### dotfiles for
 
-- list programs required for everything to work properly
+- compton
+- dunst
+- i3
+- lemonbar
+- mpd
+- mpDris2
+- mpv
+- ncmpcpp
+- pulse
+- ranger
+- urxvt
+- weechat
+
+### todo
+
+- nothing atm
