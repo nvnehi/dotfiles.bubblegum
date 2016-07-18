@@ -4,7 +4,7 @@
 
 no window on main monitor, rofi open, showing desktop, atom editor, terminals, dunst, htop
 
-![no window on main monitor, rofi open, showing desktop](http://i.imgur.com/NeZd7aR.png)
+![no window on main monitor, rofi open, showing desktop](http://i.imgur.com/hnmgadK.png)
 
 ### colors based on japanesque
 
