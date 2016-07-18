@@ -5,7 +5,7 @@ URxvt.scrollBar: false
 URxvt.letterSpace: -1
 URxvt.lineSpace: 1
 URxvt.loginShell: true
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
 URxvt.url-launcher: /usr/bin/firefox-beta
 URxvt.matcher.button: 1
 URxvt.internalBorder: 12
