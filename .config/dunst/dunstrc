@@ -1,6 +1,6 @@
 [global]
     timeout = 3
-    font = Source Code Pro 10
+    font = Roboto 10
     # font = Monospace 8
 
     # Markup reference: <http://developer.gnome.org/pango/stable/PangoMarkupFormat.html>
@@ -190,7 +190,7 @@
 
 [erc]
     icon = "*erc"
-    background = "#502777" 
+    background = "#502777"
     # format = "<span font='11' weight='bold'>%s</span>\n\n%b"
     # format = "<b>%s</b>\n\n%b"
 
