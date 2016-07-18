@@ -1,8 +1,8 @@
 ! URxvt specific
 URxvt*termName: xterm-256color
-URxvt.font: xft:source code pro:size=10
+URxvt.font: xft:dejavu sans mono:size=9
 URxvt.scrollBar: false
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 URxvt.lineSpace: 1
 URxvt.loginShell: true
 URxvt.perl-ext-common: default,matcher,selection-to-clipboard

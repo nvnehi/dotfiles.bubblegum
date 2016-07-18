@@ -6,7 +6,7 @@
 #define COLOR_ROFI_HIGHLIGHT_BACKGROUND #bf5b75
 #define COLOR_ROFI_HIGHLIGHT_FOREGROUND #ffffff
 #define COLOR_ROFI_WINDOW               COLOR_ROFI_BACKGROUND
-#define COLOR_ROFI_WINDOW_BORDER        COLOR_ROFI_BACKGROUND
+#define COLOR_ROFI_WINDOW_BORDER        COLOR_ROFI_HIGHLIGHT_BACKGROUND
 #define COLOR_ROFI_ACTIVE               COLOR_ROFI_HIGHLIGHT_BACKGROUND
 
 ! Enabled modi
@@ -20,7 +20,7 @@ rofi.lines:                          10
 ! Number of columns
 rofi.columns:                        1
 ! Font to use
-rofi.font:                           source code pro 12
+rofi.font:                           dejavu sans mono 10
 ! Color scheme for normal row        bg      fg      bgalt   hlbg    hlfg
 rofi.color-normal:                   COLOR_ROFI_BACKGROUND, COLOR_ROFI_FOREGROUND, COLOR_ROFI_BACKGROUND_ALT, COLOR_ROFI_HIGHLIGHT_BACKGROUND, COLOR_ROFI_HIGHLIGHT_FOREGROUND
 ! Color scheme for urgent row
@@ -30,7 +30,7 @@ rofi.color-active:                   COLOR_ROFI_BACKGROUND, COLOR_ROFI_HIGHLIGHT
 ! Color scheme window                window  border
 rofi.color-window:                   COLOR_ROFI_WINDOW, COLOR_ROFI_WINDOW_BORDER
 ! Border width
-rofi.bw:                             0
+rofi.bw:                             3
 ! Location on screen
 rofi.location:                       0
 ! Padding
