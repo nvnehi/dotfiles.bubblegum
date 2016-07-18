@@ -61,7 +61,24 @@ FILES = [
     ".Xresources",
     "bar.sh",
     "lemonbar_status.py",
-    "bu"
+    "bu",
+    [
+        ".weechat/",
+        "alias.conf",
+        "buffers.conf",
+        "charset.conf",
+        "exec.conf",
+        "irc.conf",
+        "iset.conf",
+        "logger.conf",
+        "plugins.conf",
+        "relay.conf",
+        "script.conf",
+        "sec.conf",
+        "trigger.conf",
+        "weechat.conf",
+        "xfer.conf",
+    ]
 ]
 
 # functions
