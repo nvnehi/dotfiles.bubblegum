@@ -78,7 +78,8 @@ FILES = [
         "trigger.conf",
         "weechat.conf",
         "xfer.conf",
-    ]
+    ],
+    "firefox_minimal.css"
 ]
 
 # functions
