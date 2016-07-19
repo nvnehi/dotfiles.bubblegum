@@ -2,8 +2,6 @@
 
 ### screenshots
 
-no window on main monitor, rofi open, showing desktop, atom editor, terminals, dunst, htop
-
 ![no window on main monitor, rofi open, showing desktop](http://i.imgur.com/x5XWxNB.png)
 
 ### colors based on japanesque
