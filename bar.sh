@@ -17,14 +17,14 @@
 
 # configuration
 NAME="bar1"
-GEOMETERY="1920x30"
-GEOMETERY2="1920x30+1920"
+GEOMETERY="1890x30"
+GEOMETERY2="1890x30+1920"
 UNDERLINE_PIXELS="3"
-COLOR_BACKGROUND="#aa111111"
+COLOR_BACKGROUND="#dd111111"
 COLOR_FOREGROUND="#ffaaaaaa"
 FONT1="DejaVu Sans Mono-10:Bold"
 FONT2="FontAwesome-12"
-ACTIONS="11"
+ACTIONS="20"
 
 # pipe status string to lemonbar, and pipe commands from it to the shell
 pypy3 -u ~/lemonbar_status.py | lemonbar \

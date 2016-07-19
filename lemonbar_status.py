@@ -31,7 +31,9 @@
 #
 
 # INFO:
+#   everything underlined it clickable/actionable
 #   cloud status relies on dropbox-cli
+#
 
 # imports
 import i3ipc
@@ -75,10 +77,10 @@ if USE_MPD:
 
 # colors, in hex
 COLOR_ACCENT    = "#bf5b75"
-COLOR_NORMAL    = "#cccccc"
+COLOR_NORMAL    = "#dddddd"
 COLOR_HIGHLIGHT = "#ffffff"
-COLOR_DARK      = "#777777"
-COLOR_ICON      = "#777777"
+COLOR_DARK      = "#bf5b75"
+COLOR_ICON      = "#bf5b75"
 COLOR_FAIL      = "#bf5b75"
 
 # icons (defaults: font awesome)
@@ -144,7 +146,7 @@ def get_workspaces():
       focused_workspace = workspace.name
 
   # build the string to return
-  s = "%{{F{}}}{} %{{F-}}".format(COLOR_DARK, ICON_WORKSPACES)
+  s = "%{{A4:i3-msg workspace prev:}}%{{A5:i3-msg workspace next:}}%{{F{}}}{} %{{F-}}".format(COLOR_DARK, ICON_WORKSPACES)
 
   # iterate the workspace names and build the string to return to lemonbar
   for workspace_name in ( natural_sort(workspace_names)):
@@ -152,7 +154,9 @@ def get_workspaces():
     if workspace_name == focused_workspace:
       s += "%{{+u}}%{{U{}}}%{{F{}}} ".format(COLOR_ACCENT, COLOR_HIGHLIGHT) + workspace_name + " %{F-}%{U-}%{-u} "
     else:
-      s += "%{{F{}}} ".format(COLOR_NORMAL) + workspace_name + " %{F-} "
+      s += "%{{A:i3-msg workspace {}:}}%{{F{}}} ".format(workspace_name, COLOR_NORMAL) + workspace_name + " %{F-}%{A} "
+
+  s += "%{A}%{A}"
 
   return s
 
@@ -369,12 +373,13 @@ def get_notifications():
 # builds the status string and returns it
 def get_status():
   return (
-    "%{{l}}%{{O{}}}{} {}%{{c}}  {}%{{r}}  {}{}{}{}{}{}{}{}{}%{{O{}}}"
+    "%{{l}}%{{O{}}}{} {}%{{c}}  {}%{{r}}  %{{+u}}%{{U{}}}{}{}{}{}{}{}{}{}{}%{{U-}}%{{-u}}"
     .format(
       GAP_WIDTH,
       get_workspaces() if USE_I3 else "",
       get_window_name() if DISPLAY_WINDOW_TITLE else "",
       get_song() if DISPLAY_SONG_INFO else "",
+      COLOR_ACCENT,
       get_media_controls() if USE_MPD and len(MPD_CLIENT.playlist()) > 0 else "",
       get_cloud_storage_status() if DISPLAY_CLOUD_STATUS else "",
       get_disk_remaining() if DISPLAY_DISK_REMAINING else "",
@@ -384,7 +389,6 @@ def get_status():
       get_time() if DISPLAY_TIME else "",
       get_power() if DISPLAY_POWER else "",
       get_notifications() if DISPLAY_NOTIFICATIONS else "",
-      GAP_WIDTH
     )
   )
 
