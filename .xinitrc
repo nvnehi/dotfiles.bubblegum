@@ -39,6 +39,7 @@ pulseaudio --start
 xset m 1 0
 sh ~/.fehbg
 compton --config ~/.config/compton/compton.conf &
+udiskie &
 pypy3 ~/bar.py &
 
 # exec window manager
