@@ -59,6 +59,7 @@ FILES = [
     ],
     ".bashrc",
     ".Xresources",
+    ".xinitrc",
     "bar.py",
     "lemonbar_status.py",
     "bu.py",
