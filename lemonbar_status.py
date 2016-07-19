@@ -60,7 +60,7 @@ DISPLAY_NETWORK_STATUS = False
 DISPLAY_VOLUME = True
 DISPLAY_DATE = True
 DISPLAY_TIME = True
-DISPLAY_POWER = True
+DISPLAY_POWER = False
 DISPLAY_NOTIFICATIONS = True
 
 # global variables
@@ -359,7 +359,7 @@ def get_power():
 # returns the formatted notifications string
 def get_notifications():
   return (
-    "%{{F{}}}%{{A:xdotool key Control+grave:}}%{{A3:xdotool key Control+Escape:}}{}%{{A}}%{{A}}%{{F-}} "
+    "%{{F{}}}%{{A:xdotool key Control+grave:}}%{{A3:xdotool key Control+Escape:}}{}%{{A}}%{{A}}%{{F-}}"
     .format(
       COLOR_ICON,
       ICON_NOTIFICATIONS

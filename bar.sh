@@ -8,7 +8,7 @@
 #   pypy3
 #   lemonbar
 #   fonts
-#     roboto
+#     dejavu sans mono
 #     font awesome
 #
 
@@ -21,7 +21,7 @@ GEOMETERY="1920x30"
 UNDERLINE_PIXELS="3"
 COLOR_BACKGROUND="#aa111111"
 COLOR_FOREGROUND="#ffaaaaaa"
-FONT1="Roboto-10:Bold"
+FONT1="DejaVu Sans Mono-10:Bold"
 FONT2="FontAwesome-12"
 ACTIONS="11"
 

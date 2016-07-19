@@ -189,7 +189,7 @@ bindsym $mod+Control+Right workspace next
 
 # application shortcuts
 bindsym $mod+space exec rofi -show run
-bindsym $mod+d exec rofi -show window
+bindsym $mod+Tab exec rofi -show window
 bindsym $mod+x exec urxvt -e ranger
 
 # pulse audio controls
