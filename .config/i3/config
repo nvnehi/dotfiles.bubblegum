@@ -204,3 +204,6 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # print screen
 bindsym Print exec scrot -e 'mv $f ~/images/screenshots'
+
+# autoexec
+exec i3-msg workspace 1
