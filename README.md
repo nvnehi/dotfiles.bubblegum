@@ -1,4 +1,4 @@
-# dotfiles and utility scripts for lorwyn.jpn
+# dotfiles and utility scripts for lorwyn.bubblegum
 
 ### screenshots
 
