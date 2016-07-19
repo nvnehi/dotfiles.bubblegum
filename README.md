@@ -25,6 +25,12 @@ no window on main monitor, rofi open, showing desktop, atom editor, terminals, d
 - urxvt
 - weechat
 
+### usage
+
+bar.py and lemonbar_status.py have configuration options within the scripts for toggles and options.
+
+default is dual monitors. if you only have one monitor, edit bar.py and change the MONITORS global variable to 1.
+
 ### todo
 
 - nothing atm
