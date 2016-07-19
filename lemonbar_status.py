@@ -64,6 +64,7 @@ DISPLAY_DATE = True
 DISPLAY_TIME = True
 DISPLAY_POWER = False
 DISPLAY_NOTIFICATIONS = True
+UNDERLINE_INDICATORS = False
 
 # global variables
 if USE_I3:
@@ -373,12 +374,13 @@ def get_notifications():
 # builds the status string and returns it
 def get_status():
   return (
-    "%{{l}}%{{O{}}}{} {}%{{c}}  {}%{{r}}  %{{+u}}%{{U{}}}{}{}{}{}{}{}{}{}{}%{{U-}}%{{-u}}"
+    "%{{l}}%{{O{}}}{} {}%{{c}}  {}%{{r}}  {}%{{U{}}}{}{}{}{}{}{}{}{}{}%{{U-}}{}"
     .format(
       GAP_WIDTH,
       get_workspaces() if USE_I3 else "",
       get_window_name() if DISPLAY_WINDOW_TITLE else "",
       get_song() if DISPLAY_SONG_INFO else "",
+      "%{+u}" if UNDERLINE_INDICATORS else "",
       COLOR_ACCENT,
       get_media_controls() if USE_MPD and len(MPD_CLIENT.playlist()) > 0 else "",
       get_cloud_storage_status() if DISPLAY_CLOUD_STATUS else "",
@@ -389,6 +391,7 @@ def get_status():
       get_time() if DISPLAY_TIME else "",
       get_power() if DISPLAY_POWER else "",
       get_notifications() if DISPLAY_NOTIFICATIONS else "",
+      "%{-u}" if UNDERLINE_INDICATORS else "",
     )
   )
 
