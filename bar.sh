@@ -18,6 +18,7 @@
 # configuration
 NAME="bar1"
 GEOMETERY="1920x30"
+GEOMETERY2="1920x30+1920"
 UNDERLINE_PIXELS="3"
 COLOR_BACKGROUND="#aa111111"
 COLOR_FOREGROUND="#ffaaaaaa"
@@ -36,4 +37,16 @@ pypy3 -u ~/lemonbar_status.py | lemonbar \
 -a "$ACTIONS" \
 -u "$UNDERLINE_PIXELS" \
 -f "$FONT1" \
--f "$FONT2" | sh
+-f "$FONT2" | sh &
+
+pypy3 -u ~/lemonbar_status.py | lemonbar \
+-p \
+-n \
+"$NAME" \
+-g "$GEOMETERY2" \
+-B "$COLOR_BACKGROUND" \
+-F "$COLOR_FOREGROUND" \
+-a "$ACTIONS" \
+-u "$UNDERLINE_PIXELS" \
+-f "$FONT1" \
+-f "$FONT2" | sh &

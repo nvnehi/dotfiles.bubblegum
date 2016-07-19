@@ -53,7 +53,7 @@ mpd_music_dir = /mnt/BigStorage/media/music
 ## }
 ##
 #
-#visualizer_fifo_path = /tmp/mpd.fifo
+visualizer_fifo_path = /tmp/mpd.fifo
 #
 ##
 ## Note: Below parameter is needed for ncmpcpp
@@ -68,7 +68,7 @@ mpd_music_dir = /mnt/BigStorage/media/music
 ##
 ## If you set format to 44100:16:2, make it 'yes'.
 ##
-#visualizer_in_stereo = yes
+visualizer_in_stereo = yes
 #
 ##
 ## Multiply received samples by given value. Very
@@ -93,11 +93,12 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 ## Available values: spectrum, wave, wave_filled, ellipse.
 ##
-#visualizer_type = wave
+visualizer_type = spectrum
 #
 #visualizer_look = ●▮
 #
 #visualizer_color = blue, cyan, green, yellow, magenta, red
+visualizer_color = 2
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
@@ -125,7 +126,7 @@ mpd_music_dir = /mnt/BigStorage/media/music
 ## Time of inactivity (in seconds) after playlist
 ## highlighting will be disabled (0 = always on).
 ##
-#playlist_disable_highlight_delay = 5
+playlist_disable_highlight_delay = 0
 #
 ## Defines how long messages are supposed to be visible.
 ##
@@ -208,7 +209,9 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 #
 #alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
+alternative_header_first_line_format = {$b$1<$8 {%t}|{%f} $1>$/b}
 #
+alternative_header_second_line_format = {{$2%a$1}{ - $2%b$2}}|{%D}
 #alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
 #
 #now_playing_prefix = $b
@@ -276,6 +279,7 @@ mpd_music_dir = /mnt/BigStorage/media/music
 ##   not available.
 ##
 #
+song_columns_list_format = (30)[2]{ar} (70)[2]{t:title}
 #song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
 #
 ##### various settings #####
@@ -292,12 +296,12 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 #playlist_shorten_total_times = no
 #
-#playlist_separate_albums = no
+playlist_separate_albums = no
 #
 ##
 ## Note: Possible display modes: classic, columns.
 ##
-#playlist_display_mode = columns
+playlist_display_mode = columns
 #
 #browser_display_mode = classic
 #
@@ -313,17 +317,17 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 #volume_change_step = 2
 #
-#autocenter_mode = no
+autocenter_mode = yes
 #
-#centered_cursor = no
+centered_cursor = no
 #
 ##
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 ##
-#progressbar_look = =>
+progressbar_look = —>—
 #
-#progressbar_boldness = yes
+progressbar_boldness = no
 #
 ## Available values: database, playlist.
 ##
@@ -331,13 +335,13 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 ## Available values: classic, alternative.
 ##
-#user_interface = classic
+user_interface = alternative
 #
 #data_fetching_delay = yes
 #
 ## Available values: artist, album_artist, date, genre, composer, performer.
 ##
-#media_library_primary_tag = artist
+media_library_primary_tag = artist
 #
 ## Available values: wrapped, normal.
 ##
@@ -345,11 +349,11 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 #default_tag_editor_pattern = %n - %t
 #
-#header_visibility = yes
+header_visibility = no
 #
 #statusbar_visibility = yes
 #
-#titles_visibility = yes
+titles_visibility = no
 #
 #header_text_scrolling = yes
 #
@@ -439,7 +443,7 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 #block_search_constraints_change_if_items_found = yes
 #
-#mouse_support = yes
+mouse_support = yes
 #
 #mouse_list_scroll_whole_page = yes
 #
@@ -467,11 +471,11 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 #search_engine_default_search_mode = 1
 #
-#external_editor = nano
+external_editor = vim
 #
 ## Note: set to yes if external editor is a console application.
 ##
-#use_console_editor = yes
+use_console_editor = yes
 #
 ##### colors definitions #####
 ##
@@ -495,33 +499,33 @@ mpd_music_dir = /mnt/BigStorage/media/music
 #
 colors_enabled = yes
 #
-#empty_tag_color = cyan
+empty_tag_color = 9
 #
-#header_window_color = default
+header_window_color = 16
 #
-#volume_color = default
+volume_color = 16
 #
-#state_line_color = default
+#state_line_color = 6
 #
 #state_flags_color = default
 #
-#main_window_color = yellow
+main_window_color = 2
 #
-#color1 = white
+color1 = 2
 #
-#color2 = green
+color2 = 10
 #
-#main_window_highlight_color = yellow
+main_window_highlight_color = 2
 #
-#progressbar_color = black
+progressbar_color = 1
 #
-#progressbar_elapsed_color = green
+progressbar_elapsed_color = 10
 #
-#statusbar_color = default
+statusbar_color = 9
 #
-#alternative_ui_separator_color = black
+alternative_ui_separator_color = 9
 #
-#active_column_color = red
+active_column_color = 10
 #
 #window_border_color = green
 #
