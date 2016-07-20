@@ -80,7 +80,8 @@ FILES = [
         "weechat.conf",
         "xfer.conf",
     ],
-    "firefox_minimal.css"
+    "firefox_minimal.css",
+    "reddit_clean_naut_bubblegum.css"
 ]
 
 # functions
